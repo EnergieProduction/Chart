@@ -1,0 +1,21 @@
+{
+  "name": "energieproduction/chart",
+  "description": "Chart service",
+  "homepage": "https://github.com/energieproduction/chart",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "De Gracia Mathieu",
+      "email": "contact@degracia-mathieu.fr"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "~5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "EnergieProduction\\Chart\\": "src/"
+    }
+  }
+}
