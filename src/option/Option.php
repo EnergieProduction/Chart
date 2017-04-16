@@ -4,16 +4,14 @@ Namespace EnergieProduction\Chart\Option;
 
 use EnergieProduction\Chart\Option\OptionContract;
 
-Class Option implements OptionContract
+abstract class Option implements OptionContract
 {
 	protected $options = [];
 	protected $pattern = [];
 
 	public function render()
 	{
-		$options = array_merge($this->pattern, $this->options);
-
-		return json_encode($options);
+		return array_merge($this->pattern, $this->options);
 	}
 
 	public function pattern($value)
