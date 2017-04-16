@@ -1,6 +1,6 @@
 {
   "name": "energieproduction/chart",
-  "description": "Chart service",
+  "description": "Chart service for Highcharts",
   "homepage": "https://github.com/energieproduction/chart",
   "license": "MIT",
   "authors": [
