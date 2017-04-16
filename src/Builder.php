@@ -1,22 +1,22 @@
 <?php
 
-Namespace EnergieProduction\Chart\Option;
+Namespace EnergieProduction\Chart;
 
 use Closure;
-use EnergieProduction\Chart\Option\OptionContract;
+use Exception;
 
 Class Builder {
 
-	public function __construct(OptionContract $option)
+	public function __construct($class)
 	{
-		$this->option = $option;
+		$this->class = $class;
 	}
 
 	public function make(Closure $callback)
 	{
-		$this->callFunc($callback, $this->option);
+		$this->callFunc($callback, $this->class);
 
-		return $this->option->render();
+		return $this->class->render();
 	}
 
 	protected function callFunc($callback, $option)
