@@ -15,37 +15,37 @@ In `/config/app.php` add ChartServiceProvider:
 ```
 EnergieProduction\Chart\ChartServiceProvider::class,
 ```
-
+Publish config settings:
+```
+php artisan vendor:publish
+```
 # Usage
 
 The `make` method returns a formated JSON for Highcharts, use the `setOptions` method to save options and `setSeries` for series.
 
 ```php
-$chart = app('chart')->make(function($c) {
+$chart = app('chart');
 
-    $c->setOption(app('option.title')->make(function($o) {
-        $o->text('Title');
-    }));
+$chart->setOption('title', function($o) {
 
-    $c->setSerie(app('serie')->make(function($s) {
-        $s->name('Serie title');
-        $s->type('line');
-        $s->data([1,2,3,4]);
-    }));
+    $o->text = 'Titre';
+    $o->align = 'left';
+    $o->style = ['fontFamily' => 'Karla, sans-serif'];
+
 });
 
-// "{
-//  "title":{
-//      "text":"Title"
-//  },
-//  "series":[{
-//      "name":"Serie title",
-//      "type":"line",
-//      "data":[1,2,3,4]
-//  }]
-// }"
+$chart->setSerie(function($s) {
+
+    $s->name = 'Serie 1';
+    $s->type = 'line';
+    $s->color = '#ff0000';
+    $s->data = [1,2,3,4];
+
+});
+
+$chart->render();
 ```
 
 # Available options
 
-All available options are visible in the folder `energieproduction\Chart\src\option`
+All available options are visible in the folder `energieproduction\Chart\src\Highcharts`
