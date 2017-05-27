@@ -7,35 +7,46 @@ use Exception;
 
 Class Chart
 {
-	protected $options = [];
-	protected $series = [];
+	protected $chart = [];
+	protected $config = [];
+	protected $builder;
 
-	public function make(Closure $callback)
+	public function __construct($builder, array $config)
 	{
-		$this->callFunc($callback);
-
-		$options = array_merge($this->options, ['series' => $this->series]);
-
-		return json_encode($options);
+		$this->builder = $builder;
+		$this->config = $config;
+		$this->chart = [
+			'options' => [],
+			'series' => [],
+		];
 	}
 
-	public function setOption($option)
+	public function setOption($type, $option)
 	{
-		$this->options = array_merge($this->options, $option);
-	}
+		$availableTypes = array_keys($this->config['available_types']);
 
-	public function setSerie($serie)
-	{
-		$this->series[] = $serie;
-	}
-
-	protected function callFunc($callback)
-	{
-		if ($callback instanceof Closure)
-		{
-			return call_user_func($callback, $this);
+		if (! in_array($type, $availableTypes)) {
+			throw new UnavailableOptionType;
 		}
 
-		throw new Exception("Callback is not valid.");
+		$this->builder->setOption($type, $this->config['available_types'][$type]);
+
+		$option = $this->builder->make($option);
+
+		$this->chart['options'] = array_merge($this->chart['options'], $option);
+	}
+
+	public function setSerie($callback)
+	{
+		$this->builder->setSerie();
+
+		$this->chart['series'][] = $this->builder->make($callback);
+	}
+
+	public function render()
+	{
+		$options = array_merge($this->chart['options'], ['series' => $this->chart['series']]);
+
+		return json_encode($options);
 	}
 }

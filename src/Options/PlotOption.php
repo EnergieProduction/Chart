@@ -1,8 +1,8 @@
 <?php
 
-Namespace EnergieProduction\Chart\Option;
+Namespace EnergieProduction\Chart\Options;
 
-use EnergieProduction\Chart\Option\Option;
+use EnergieProduction\Chart\Options\Option;
 
 Class PlotOption extends Option
 {

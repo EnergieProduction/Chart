@@ -1,6 +1,6 @@
 <?php
 
-Namespace EnergieProduction\Chart\Serie;
+Namespace EnergieProduction\Chart\Series;
 
 Class Serie {
 

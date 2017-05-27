@@ -4,16 +4,35 @@ Namespace EnergieProduction\Chart;
 
 use Closure;
 use Exception;
+use EnergieProduction\Chart\Exceptions\CallbackNotValidException;
+use EnergieProduction\Chart\Exceptions\NoClassInstanciedException;
 
 Class Builder {
 
-	public function __construct($class)
+	protected $class;
+
+	public function setOption($class, $options)
 	{
-		$this->class = $class;
+		$className = ucfirst($class);
+
+		$class = __NAMESPACE__ . "\\Options\\$className";
+
+		$this->class = new $class($options);
 	}
 
-	public function make(Closure $callback)
+	public function setSerie()
 	{
+		$class = __NAMESPACE__ . "\\Series\\Serie";
+
+		$this->class = new $class;
+	}
+
+	public function make($callback)
+	{
+		if (! $this->class) {
+			throw new NoClassInstanciedException;
+		}
+
 		$this->callFunc($callback, $this->class);
 
 		return $this->class->render();
@@ -21,11 +40,11 @@ Class Builder {
 
 	protected function callFunc($callback, $option)
 	{
-		if ($callback instanceof Closure)
+		if (! $callback instanceof Closure)
 		{
-			return call_user_func($callback, $option);
+			throw new CallbackNotValidException();
 		}
 
-		throw new Exception("Callback is not valid.");
+		return call_user_func($callback, $option);
 	}
 }
