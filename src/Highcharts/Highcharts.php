@@ -1,11 +1,10 @@
 <?php
 
-Namespace EnergieProduction\Chart\Options;
+Namespace EnergieProduction\Chart\Highcharts;
 
-use EnergieProduction\Chart\Options\OptionContract;
 use EnergieProduction\Chart\Exceptions\UnavailableMethodException;
 
-abstract class Option implements OptionContract
+abstract class Highcharts
 {
 	protected $availableMethods = [];
 	protected $options = [];

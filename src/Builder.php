@@ -11,20 +11,20 @@ Class Builder {
 
 	protected $class;
 
-	public function setOption($class, $options)
+	public function setOption($class, array $config)
 	{
 		$className = ucfirst($class);
 
-		$class = __NAMESPACE__ . "\\Options\\$className";
+		$class = __NAMESPACE__ . "\\Highcharts\\Options\\$className";
 
-		$this->class = new $class($options);
+		$this->class = new $class($config);
 	}
 
-	public function setSerie()
+	public function setSerie(array $config)
 	{
-		$class = __NAMESPACE__ . "\\Series\\Serie";
+		$class = __NAMESPACE__ . "\\Highcharts\\Series\\Serie";
 
-		$this->class = new $class;
+		$this->class = new $class($config);
 	}
 
 	public function make($callback)
