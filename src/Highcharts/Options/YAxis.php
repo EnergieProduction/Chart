@@ -10,4 +10,9 @@ Class YAxis extends Highcharts
 	{
 		$this->options['labels'] = $value;
 	}
+
+	protected function setTitleAttribute(array $value = [])
+	{
+		$this->options['title'] = $value;
+	}
 }

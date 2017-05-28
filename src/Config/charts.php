@@ -6,10 +6,10 @@ return [
 		'available_types' => [
 			'title' => ['text','align','style'],
 			'legend' => ['itemStyle'],
-			'plotOption' => ['plotOption','shared','valueSuffix'],
+			'plotOptions' => ['plotOption','shared','valueSuffix','series'],
 			'subtitle' => ['text','style'],
-			'xAxis' => ['categories','tickWidth','gridLineWidth','labels'],
-			'yAxis' => ['text','label','showFirstLabel'],
+			'xAxis' => ['title','categories','tickWidth','gridLineWidth','labels'],
+			'yAxis' => ['title','label','showFirstLabel'],
 			'chart' => ['style','backgroundColor','borderColor','borderRadius','borderWidth','marginTop','className'],
 			'credits' => ['enabled'],
 		],

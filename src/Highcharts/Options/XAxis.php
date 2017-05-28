@@ -15,4 +15,9 @@ Class XAxis extends Highcharts
 	{
 		$this->options['labels'] = ['style' => $value];
 	}
+
+	protected function setTitleAttribute(array $value = [])
+	{
+		$this->options['title'] = $value;
+	}
 }
