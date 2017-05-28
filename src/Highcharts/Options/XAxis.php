@@ -8,11 +8,11 @@ Class XAxis extends Highcharts
 {
 	protected function setCategoriesAttribute(array $value = [])
 	{
-		$this->options['xAxis']['categories'] = $value;
+		$this->options['categories'] = $value;
 	}
 
 	protected function setLabelsAttribute(array $value = [])
 	{
-		$this->options['xAxis']['labels'] = ['style' => $value];
+		$this->options['labels'] = ['style' => $value];
 	}
 }

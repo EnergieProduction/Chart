@@ -8,6 +8,6 @@ Class Legend extends Highcharts
 {
 	protected function setItemStyleAttribute(array $value = [])
 	{
-		$this->options['legend']['itemStyle'] = $value;
+		$this->options['itemStyle'] = $value;
 	}
 }

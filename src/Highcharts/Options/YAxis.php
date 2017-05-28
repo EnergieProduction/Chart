@@ -8,6 +8,6 @@ Class YAxis extends Highcharts
 {
 	protected function setLabelsAttribute(array $value = [])
 	{
-		$this->options['yAxis']['labels'] = $value;
+		$this->options['labels'] = $value;
 	}
 }

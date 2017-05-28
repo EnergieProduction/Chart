@@ -8,6 +8,6 @@ Class Subtitle extends Highcharts
 {
 	protected function setStyleAttribute(array $value = [])
 	{
-		$this->options['subtitle']['style'] = ['style' => $value];
+		$this->options['style'] = ['style' => $value];
 	}
 }
