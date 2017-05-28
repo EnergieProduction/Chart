@@ -33,7 +33,7 @@ Class Chart
 
 		$option = $this->builder->make($callback);
 
-		$this->chart['options'] = array_merge($this->chart['options'], $option);
+		$this->chart['options'][$type] = array_merge($this->chart['options'], $option);
 	}
 
 	public function setSerie($callback)
