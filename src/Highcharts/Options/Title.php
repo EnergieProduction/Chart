@@ -8,6 +8,6 @@ Class Title extends Highcharts
 {
 	protected function setStyleAttribute(array $value = [])
 	{
-		$this->options['style'] = [1];
+		$this->options['style'] = ['style' => $value];
 	}
 }
