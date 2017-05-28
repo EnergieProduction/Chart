@@ -31,24 +31,35 @@ The `make` method returns a formated JSON for Highcharts, use the `setOptions` m
 $chart = app('chart');
 
 $chart->setOption('title', function($o) {
-
-    $o->text = 'Titre';
+    $o->text = 'Solar Employment Growth by Sector, 2010-2016';
     $o->align = 'left';
-    $o->style = ['fontFamily' => 'Karla, sans-serif'];
+});
 
+$chart->setOption('plotOptions', function($o) {
+    $o->series = ['pointStart' => 2010];
+});
+
+$chart->setOption('yAxis', function($o) {
+    $o->title = ['text' => 'Number of Employees'];
 });
 
 $chart->setSerie(function($s) {
-
-    $s->name = 'Serie 1';
+    $s->name = 'Installation';
     $s->type = 'line';
-    $s->color = '#ff0000';
-    $s->data = [1,2,3,4];
+    $s->data = [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175];
+});
 
+$chart->setSerie(function($s) {
+    $s->name = 'Manufacturing';
+    $s->type = 'line';
+    $s->data = [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434];
 });
 
 $chart->render();
 ```
+
+
+![Demo](https://i58.servimg.com/u/f58/11/13/61/32/chart310.png)
 
 # Available options
 
