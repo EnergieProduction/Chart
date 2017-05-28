@@ -10,6 +10,7 @@ return [
 			'subtitle' => ['text','style'],
 			'xAxis' => ['categories','tickWidth','gridLineWidth','labels'],
 			'yAxis' => ['text','label','showFirstLabel'],
+			'chart' => ['style','backgroundColor','borderColor','borderRadius','borderWidth','marginTop','className'],
 		],
 	],
 
