@@ -4,8 +4,8 @@ Namespace EnergieProduction\Chart;
 
 use Closure;
 use Exception;
+use EnergieProduction\Chart\Exceptions\BuilderNotReadyException;
 use EnergieProduction\Chart\Exceptions\CallbackNotValidException;
-use EnergieProduction\Chart\Exceptions\NoClassInstanciedException;
 
 Class Builder {
 
@@ -30,7 +30,7 @@ Class Builder {
 	public function make($callback)
 	{
 		if (! $this->class) {
-			throw new NoClassInstanciedException;
+			throw new BuilderNotReadyException;
 		}
 
 		$this->callFunc($callback, $this->class);

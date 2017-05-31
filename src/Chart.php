@@ -4,6 +4,7 @@ namespace EnergieProduction\Chart;
 
 use Closure;
 use Exception;
+use EnergieProduction\Chart\Exceptions\UnavailableOptionException;
 
 Class Chart
 {
@@ -26,14 +27,14 @@ Class Chart
 		$availableTypes = array_keys($this->config['options']['available_types']);
 
 		if (! in_array($type, $availableTypes)) {
-			throw new UnavailableOptionType;
+			throw new UnavailableOptionException;
 		}
 
 		$this->builder->setOption($type, $this->config['options']['available_types'][$type]);
 
-		$option = [$type => $this->builder->make($callback)];
+		$formattedOption = [$type => $this->builder->make($callback)];
 
-		$this->chart['options'] = array_merge($this->chart['options'], $option);
+		$this->chart['options'] = array_merge($this->chart['options'], $formattedOption);
 	}
 
 	public function setSerie($callback)
