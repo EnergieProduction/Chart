@@ -22,11 +22,9 @@ class ChartServiceProvider extends ServiceProvider{
     {
         $this->app->bind('chart', function($app) {
 
-            $builder = new Builder();
-
             $config = config('charts');
 
-            return new Chart($builder, $config);
+            return new Chart($config);
         });
     }
 

@@ -11,11 +11,9 @@ Class Chart
 {
 	protected $chart = [];
 	protected $config = [];
-	protected $builder;
 
-	public function __construct($builder, array $config)
+	public function __construct(array $config)
 	{
-		$this->builder = $builder;
 		$this->config = $config;
 		$this->chart = [
 			'options' => [],
@@ -25,34 +23,20 @@ Class Chart
 
 	public function setOption($type, $callback)
 	{
-		$availableTypes = array_keys($this->config['options']['available_types']);
+		$options = new Options($this->config['options']);
 
-		if (! in_array($type, $availableTypes)) {
-			throw new UnavailableOptionException;
-		}
-
-		$this->builder->setOption($type, $this->config['options']['available_types'][$type]);
-
-		$formattedOption = [$type => $this->builder->make($callback)];
+		$formattedOption = $options->make($type, $callback);
 
 		$this->chart['options'] = array_merge($this->chart['options'], $formattedOption);
 	}
 
 	public function setSerie($type, $callback)
 	{
-		$availableTypes = array_keys($this->config['series']['available_types']);
+		$series = new Series($this->config['series']);
 
-		if (! in_array($type, $availableTypes)) {
-			throw new UnavailableSerieException;
-		}
+		$formattedSerie = $series->make($type, $callback);
 
-		$this->builder->setSerie($type, $this->config['series']['available_types'][$type]);
-
-		$formattedOption = $this->builder->make($callback);
-
-		$formattedOption['type'] = $type;
-
-		$this->chart['series'][] = $formattedOption;
+		$this->chart['series'][] = $formattedSerie;
 	}
 
 	public function render()
