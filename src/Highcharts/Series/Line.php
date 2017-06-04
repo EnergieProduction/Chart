@@ -4,7 +4,7 @@ Namespace EnergieProduction\Chart\Highcharts\Series;
 
 use EnergieProduction\Chart\Highcharts\Highcharts;
 
-Class Serie extends Highcharts {
+Class Line extends Highcharts {
 
 	//
 

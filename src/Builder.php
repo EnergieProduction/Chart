@@ -20,9 +20,11 @@ Class Builder {
 		$this->class = new $class($config);
 	}
 
-	public function setSerie(array $config)
+	public function setSerie($class, array $config)
 	{
-		$class = __NAMESPACE__ . "\\Highcharts\\Series\\Serie";
+		$className = ucfirst($class);
+
+		$class = __NAMESPACE__ . "\\Highcharts\\Series\\$className";
 
 		$this->class = new $class($config);
 	}

@@ -16,6 +16,8 @@ return [
 	],
 
 	'series' => [
-		'available_types' => ['name','data','zIndex','color','type','fillOpacity','lineWidth'],
+		'available_types' => [
+			'line' => ['name','data','zIndex','color','type','fillOpacity','lineWidth'],
+		]
 	]
 ];
