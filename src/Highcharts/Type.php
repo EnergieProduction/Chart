@@ -2,17 +2,17 @@
 
 Namespace EnergieProduction\Chart\Highcharts;
 
-use EnergieProduction\Chart\Exceptions\UnavailableMethodException;
+use EnergieProduction\Chart\Exceptions\UnavailablePropertyException;
 
 abstract class Type
 {
-	protected $availableMethods = [];
+	protected $availableProperties = [];
 	protected $options = [];
 	protected $pattern = [];
 
-	public function __construct(array $availableMethods)
+	public function __construct(array $availableProperties)
 	{
-		$this->availableMethods = $availableMethods;
+		$this->availableProperties = $availableProperties;
 	}
 
 	public function render()
@@ -29,8 +29,8 @@ abstract class Type
 
     public function __set($key, $value)
     {
-        if (! in_array($key, $this->availableMethods)) {
-            throw new UnavailableMethodException;
+        if (! in_array($key, $this->availableProperties)) {
+            throw new UnavailablePropertyException;
         }
 
         return $this->setAttribute($key, $value);

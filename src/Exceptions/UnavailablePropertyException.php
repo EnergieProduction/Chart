@@ -4,7 +4,7 @@ Namespace EnergieProduction\Chart\Exceptions;
 
 use Exception;
 
-Class UnavailableMethodException extends Exception
+Class UnavailablePropertyException extends Exception
 {
 	//
 }
