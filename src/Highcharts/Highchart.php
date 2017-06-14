@@ -1,10 +1,11 @@
 <?php
 
-namespace EnergieProduction\Chart;
+namespace EnergieProduction\Chart\Highcharts;
 
-use EnergieProduction\Chart\Exceptions\UnavailableSerieException;
+use EnergieProduction\Chart\Builder;
+use EnergieProduction\Chart\Exceptions\UnavailableTypeException;
 
-Class Series
+abstract Class Highchart
 {
 	protected $config = [];
 
@@ -18,21 +19,21 @@ Class Series
 		$availableTypes = array_keys($this->config['available_types']);
 
 		if (! in_array($type, $availableTypes)) {
-			throw new UnavailableSerieException;
+			throw new UnavailableTypeException;
 		}
 
 		$optionClass = $this->makeClass($type);
 
 		$builder = new Builder($optionClass);
 
-		return ['type' => $type] + $builder->make($callback);
+		return $builder->make($callback);
 	}
 
 	protected function makeClass($type)
 	{
 		$className = ucfirst($type);
 
-		$class = __NAMESPACE__ . "\\Highcharts\\Series\\$className";
+		$class = static::path . $className;
 
 		$config = $this->config['available_types'][$type];
 

@@ -4,6 +4,8 @@ namespace EnergieProduction\Chart;
 
 use Closure;
 use Exception;
+use EnergieProduction\Chart\Highcharts\Options\Option;
+use EnergieProduction\Chart\Highcharts\Series\Serie;
 use EnergieProduction\Chart\Exceptions\UnavailableSerieException;
 use EnergieProduction\Chart\Exceptions\UnavailableOptionException;
 
@@ -23,7 +25,7 @@ Class Chart
 
 	public function setOption($type, $callback)
 	{
-		$options = new Options($this->config['options']);
+		$options = new Option($this->config['options']);
 
 		$formattedOption = $options->make($type, $callback);
 
@@ -32,7 +34,7 @@ Class Chart
 
 	public function setSerie($type, $callback)
 	{
-		$series = new Series($this->config['series']);
+		$series = new Serie($this->config['series']);
 
 		$formattedSerie = $series->make($type, $callback);
 

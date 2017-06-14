@@ -1,13 +1,13 @@
 <?php
 
-Namespace EnergieProduction\Chart\Highcharts\Options;
+Namespace EnergieProduction\Chart\Highcharts\Options\Types;
 
 use InvalidArgumentException;
-use EnergieProduction\Chart\Highcharts\Highcharts;
+use EnergieProduction\Chart\Highcharts\Type;
 
-Class Credits extends Highcharts
+Class Credits extends Type
 {
-	protected function setEnabledAttribute($value)
+	protected function setEnabledProperty($value)
 	{
 		if (! is_bool($value)) {
 			throw new InvalidArgumentException('Credits Enabled must be : boolean');

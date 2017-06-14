@@ -4,7 +4,7 @@ Namespace EnergieProduction\Chart\Highcharts;
 
 use EnergieProduction\Chart\Exceptions\UnavailableMethodException;
 
-abstract class Highcharts
+abstract class Type
 {
 	protected $availableMethods = [];
 	protected $options = [];
@@ -49,7 +49,7 @@ abstract class Highcharts
 
     protected function formatMethod($key, $type)
     {
-        $method = $type . studly_case($key) . 'Attribute';
+        $method = $type . studly_case($key) . 'Property';
 
         if (method_exists($this, $method)) {
             return $method;
