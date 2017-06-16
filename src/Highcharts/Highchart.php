@@ -22,14 +22,14 @@ abstract Class Highchart
 			throw new UnavailableTypeException;
 		}
 
-		$optionClass = $this->makeClass($type);
+		$typeClass = $this->makeTypeClass($type);
 
-		$builder = new Builder($optionClass);
+		$builder = new Builder($typeClass);
 
 		return $builder->make($callback);
 	}
 
-	protected function makeClass($type)
+	protected function makeTypeClass($type)
 	{
 		$className = ucfirst($type);
 
