@@ -30,7 +30,7 @@ abstract class Type
     public function __set($key, $value)
     {
         if (! in_array($key, $this->availableProperties)) {
-            throw new UnavailablePropertyException;
+            throw new UnavailablePropertyException($key . ' is not a valid property');
         }
 
         return $this->setAttribute($key, $value);
