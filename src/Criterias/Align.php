@@ -1,6 +1,6 @@
 <?php
 
-namespace EnergieProduction\Criterias;
+namespace EnergieProduction\Chart\Criterias;
 
 Class Align extends Builder {
 

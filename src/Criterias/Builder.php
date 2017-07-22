@@ -1,6 +1,6 @@
 <?php
 
-namespace EnergieProduction\Criterias;
+namespace EnergieProduction\Chart\Criterias;
 
 abstract class Builder implements Criteria {
 

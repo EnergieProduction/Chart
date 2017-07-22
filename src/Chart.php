@@ -3,8 +3,8 @@
 namespace EnergieProduction\Chart;
 
 use Closure;
-use EnergieProduction\Subsets;
 use Illuminate\Support\Collection;
+use EnergieProduction\Chart\Subsets;
 
 Class Chart {
 
@@ -110,7 +110,7 @@ Class Chart {
 	 */
 	protected function makeSubsetClass($subset)
 	{
-		$class = "EnergieProduction\\Subsets\\" . ucfirst($subset);
+		$class = "EnergieProduction\\Chart\\Subsets\\" . ucfirst($subset);
 
 		return new $class;
 	}

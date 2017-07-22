@@ -1,8 +1,8 @@
 <?php
 
-namespace EnergieProduction\Subsets;
+namespace EnergieProduction\Chart\Subsets;
 
-use EnergieProduction\Criterias\Criteria;
+use EnergieProduction\Chart\Criterias\Criteria;
 
 abstract class Builder implements Subset {
 
