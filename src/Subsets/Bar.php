@@ -1,6 +1,6 @@
 <?php
 
-namespace EnergieProduction\Criterias;
+namespace EnergieProduction\Subsets;
 
 Class Bar extends Builder {
 

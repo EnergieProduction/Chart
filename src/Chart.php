@@ -111,7 +111,7 @@ Class Chart {
 	 */
 	protected function makeSubsetClass($subset)
 	{
-		$class = "Service\\Subsets\\" . ucfirst($subset);
+		$class = "EnergieProduction\\Subsets\\" . ucfirst($subset);
 
 		return new $class;
 	}
