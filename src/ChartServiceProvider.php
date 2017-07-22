@@ -25,7 +25,7 @@ class ChartServiceProvider extends ServiceProvider{
 
             $collection = new Collection;
 
-            return new Chart();
+            return new Chart($collection);
         });
     }
 }

@@ -6,7 +6,7 @@ use Service\Criterias\Criteria;
 
 abstract class Builder implements Subset {
 
-	protected $criteriaList = [];
+	protected $criteriaList;
 	public $cascade = null;
 
 	public function __construct()
