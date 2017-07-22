@@ -1,7 +1,8 @@
 <?php
 
-namespace EnergieProduction\Chart;
+namespace Service\Chart;
 
+use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 
 class ChartServiceProvider extends ServiceProvider{
@@ -15,23 +16,16 @@ class ChartServiceProvider extends ServiceProvider{
 
     public function boot()
     {
-        $this->publishesConfig();
+        //
     }
 
     public function register()
     {
         $this->app->bind('chart', function($app) {
 
-            $config = config('charts');
+            $collection = new Collection;
 
-            return new Chart($config);
+            return new Chart();
         });
-    }
-
-    protected function publishesConfig()
-    {
-        $this->publishes([
-            __DIR__.'/Config/charts.php' => config_path('charts.php'),
-        ]);
     }
 }

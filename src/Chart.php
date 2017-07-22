@@ -1,50 +1,141 @@
 <?php
 
-namespace EnergieProduction\Chart;
+namespace Service\Chart;
 
 use Closure;
-use Exception;
-use EnergieProduction\Chart\Highcharts\Options\Option;
-use EnergieProduction\Chart\Highcharts\Series\Serie;
-use EnergieProduction\Chart\Exceptions\UnavailableSerieException;
-use EnergieProduction\Chart\Exceptions\UnavailableOptionException;
+use Service\Subsets;
+use Illuminate\Support\Collection;
 
-Class Chart
-{
-	protected $chart = [];
-	protected $config = [];
+Class Chart {
 
-	public function __construct(array $config)
+	protected $subsetList;
+
+	/**
+	 * [__construct description]
+	 * @param \Illuminate\Support\Collection $subsetList
+	 */
+	public function __construct(Collection $subsetList)
 	{
-		$this->config = $config;
-		$this->chart = [
-			'options' => [],
-			'series' => [],
-		];
+		$this->subsetList = $subsetList;
 	}
 
-	public function setOption($type, $callback)
+	/**
+	 * [addSubset description]
+	 * @param string  $subset
+	 * @param \Closure $closure
+	 */
+	public function addSubset($subset, Closure $closure)
 	{
-		$options = new Option($this->config['options']);
-
-		$formattedOption = $options->make($type, $callback);
-
-		$this->chart['options'] = array_merge($this->chart['options'], $formattedOption);
+		if (str_contains($subset, '.')) {
+			$this->addCascadeSubset($subset, $closure);
+		}
+		else {
+			$this->addSimpleSubset($subset, $closure);
+		}
 	}
 
-	public function setSerie($type, $callback)
-	{
-		$series = new Serie($this->config['series']);
-
-		$formattedSerie = $series->make($type, $callback);
-
-		$this->chart['series'][] = $formattedSerie;
-	}
-
+	/**
+	 * [render description]
+	 * @return json [description]
+	 */
 	public function render()
 	{
-		$options = array_merge($this->chart['options'], ['series' => $this->chart['series']]);
+		$formatedChart = [];
 
-		return json_encode($options);
+		foreach ($this->subsetList as $subset) {
+
+			$render = $subset->render();
+
+			if ($subset->cascade) {
+
+				$tmpArray = [];
+
+				$this->dotNotationToArray($tmpArray, $subset->cascade, $render);
+
+				$render = $tmpArray;
+			}
+
+			$formatedChart = array_merge_recursive($formatedChart, $render);
+		}
+
+		return json_encode($formatedChart);
+	}
+
+	/**
+	 * [addSimpleSubset description]
+	 * @param string  $subset
+	 * @param \Closure $closure
+	 */
+	protected function addSimpleSubset($subset, Closure $closure)
+	{
+		$subset = $this->makeSubsetClass($subset);
+
+		$this->callFunc($closure, $subset);
+
+		$this->subsetList->push($subset);
+	}
+
+	/**
+	 * [addCascadeSubset description]
+	 * @param string  $cascadeSubsetNotation
+	 * @param \Closure $closure
+	 */
+	protected function addCascadeSubset($cascadeSubsetNotation, Closure $closure)
+	{
+		$subsetsList = explode('.', $cascadeSubsetNotation);
+
+		$subset = $this->makeSubsetClass(end($subsetsList));
+
+		$subset->setCascade($cascadeSubsetNotation);
+
+		$this->callFunc($closure, $subset);
+
+		$this->subsetList->push($subset);
+	}
+
+	/**
+	 * [callFunc description]
+	 * @param  \Closure $closure
+	 * @param  [type] $class
+	 * @return [type
+	 */
+	protected function callFunc(Closure $closure, $class)
+	{
+		return call_user_func($closure, $class);
+	}
+
+	/**
+	 * [makeSubsetClass description]
+	 * @param  [type] $subset
+	 * @return [type]
+	 */
+	protected function makeSubsetClass($subset)
+	{
+		$class = "Service\\Subsets\\" . ucfirst($subset);
+
+		return new $class;
+	}
+
+	/**
+	 * [dotNotationToArray description]
+	 * @param  array  &$arr
+	 * @param  string $path
+	 * @param  array $val
+	 * @return array
+	 */
+	protected function dotNotationToArray(array &$arr, $path, $val)
+	{
+	   $loc = &$arr;
+
+	   $path = explode('.', $path);
+
+	   array_pop($path);
+
+	   foreach($path as $step)
+	   {
+	     $loc = &$loc[$step];
+	   }
+
+	   return $loc = $val;
 	}
 }
