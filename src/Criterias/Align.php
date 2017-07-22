@@ -1,6 +1,6 @@
 <?php
 
-namespace Service\Criterias;
+namespace EnergieProduction\Criterias;
 
 Class Align extends Builder {
 

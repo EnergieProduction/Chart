@@ -1,8 +1,8 @@
 <?php
 
-namespace Service\Subsets;
+namespace EnergieProduction\Subsets;
 
-use Service\Criterias\Criteria;
+use EnergieProduction\Criterias\Criteria;
 
 abstract class Builder implements Subset {
 

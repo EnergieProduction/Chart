@@ -1,6 +1,6 @@
 <?php
 
-namespace Service\Criterias;
+namespace EnergieProduction\Criterias;
 
 abstract class Builder implements Criteria {
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Service\Chart;
+namespace EnergieProduction\Chart;
 
 use Closure;
-use Service\Subsets;
+use EnergieProduction\Subsets;
 use Illuminate\Support\Collection;
 
 Class Chart {

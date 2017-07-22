@@ -1,6 +1,6 @@
 <?php
 
-namespace Service\Chart;
+namespace EnergieProduction\Chart;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;

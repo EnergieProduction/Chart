@@ -1,6 +1,6 @@
 <?php
 
-namespace Service\Subsets;
+namespace EnergieProduction\Subsets;
 
 Class Style extends Builder {
 
