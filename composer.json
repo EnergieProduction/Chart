@@ -3,6 +3,11 @@
   "description": "Chart service for Highcharts",
   "homepage": "https://github.com/energieproduction/chart",
   "license": "MIT",
+  "keywords": [
+    "laravel",
+    "chart",
+    "Highcharts"
+  ],  
   "authors": [
     {
       "name": "De Gracia Mathieu",
