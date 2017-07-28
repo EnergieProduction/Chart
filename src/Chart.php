@@ -58,7 +58,14 @@ Class Chart {
 			$formatedChart = array_merge_recursive($formatedChart, $render);
 		}
 
-		return json_encode($formatedChart);
+		$formatedChart = json_encode($formatedChart);
+
+		if (str_contains($formatedChart, '"#!!')) {
+			$formatedChart = str_replace('"#!!', '', $formatedChart);
+			$formatedChart = str_replace('!!#"', '', $formatedChart);
+		}
+
+		return $formatedChart;
 	}
 
 	/**
