@@ -61,8 +61,7 @@ Class Chart {
 		$formatedChart = json_encode($formatedChart);
 
 		if (str_contains($formatedChart, '"#!!')) {
-			$formatedChart = str_replace('"#!!', '', $formatedChart);
-			$formatedChart = str_replace('!!#"', '', $formatedChart);
+			$formatedChart = $this->restoreExpressions($formatedChart);
 		}
 
 		return $formatedChart;
@@ -143,5 +142,18 @@ Class Chart {
 	   }
 
 	   return $loc = $val;
+	}
+
+	/**
+	 * [restoreExpressions description]
+	 * @param  string $formatedChart
+	 * @return string
+	 */
+	protected function restoreExpressions($formatedChart)
+	{
+		$formatedChart = str_replace('"#!!', '', $formatedChart);
+		$formatedChart = str_replace('!!#"', '', $formatedChart);
+
+		return $formatedChart;
 	}
 }
