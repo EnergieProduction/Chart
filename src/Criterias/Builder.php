@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
+use EnergieProduction\Chart\Rendered;
 use EnergieProduction\Chart\Expression;
 
 abstract class Builder implements Criteria {
@@ -15,11 +16,14 @@ abstract class Builder implements Criteria {
 
 	public function render()
 	{
+		$render = new Rendered\Render($this);
+		$render = new Rendered\Criteria($render);
+
 	    if ($this->content instanceof Expression) {
-			return [$this->getKey() => "#!!" . $this->content->render() . "!!#"];
+			$render = new Rendered\Expression($render);
 	    }
 
-		return [$this->getKey() => $this->content];
+		return $render->handle($this->content);
 	}
 
 	protected function getKey()
@@ -27,3 +31,9 @@ abstract class Builder implements Criteria {
 		return lcfirst(class_basename(get_class($this)));
 	}
 }
+
+
+
+
+
+

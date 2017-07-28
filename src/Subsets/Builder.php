@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Subsets;
 
+use EnergieProduction\Chart\Rendered;
 use EnergieProduction\Chart\Criterias\Criteria;
 
 abstract class Builder implements Subset {
@@ -27,13 +28,9 @@ abstract class Builder implements Subset {
 			$formatedSubset = array_merge($formatedSubset, $criteria->render());
 		}
 
-		$subset = lcfirst(class_basename(get_class($this)));
+		$render = new Rendered\Subset(new Rendered\Render($this));
 
-		if ($subset === 'series' && (! $this->cascade || starts_with($this->cascade, 'series.'))) {
-			return [$subset => [$formatedSubset]];
-		}
-
-		return [$subset => $formatedSubset];
+		return $render->handle($formatedSubset);
 	}
 
 	public function setCascade($cascade)
