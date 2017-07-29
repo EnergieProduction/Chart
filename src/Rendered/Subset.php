@@ -4,6 +4,8 @@ namespace EnergieProduction\Chart\Rendered;
 
 class Subset implements Rendered {
 
+    protected $render;
+
     public function __construct(Rendered $render)
     {
         $this->render = $render;

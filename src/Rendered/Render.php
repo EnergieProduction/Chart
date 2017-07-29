@@ -4,6 +4,8 @@ namespace EnergieProduction\Chart\Rendered;
 
 class Render implements rendered {
 
+	protected $render;
+
     public function __construct($class)
     {
         $this->class = $class;
