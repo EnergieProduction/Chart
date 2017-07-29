@@ -25,15 +25,4 @@ abstract class Builder implements Criteria {
 
 		return $render->handle($this->content);
 	}
-
-	protected function getKey()
-	{
-		return lcfirst(class_basename(get_class($this)));
-	}
 }
-
-
-
-
-
-
