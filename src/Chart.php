@@ -13,7 +13,6 @@ Class Chart {
 	/**
 	 * [__construct description]
 	 * @param \Illuminate\Support\Collection $subsetList
-	 * @return void
 	 */
 	public function __construct(Collection $subsetList)
 	{

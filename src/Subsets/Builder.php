@@ -12,7 +12,6 @@ abstract class Builder implements Subset {
 
     /**
      * [__construct description]
-     * @return void  
      */
 	public function __construct()
 	{

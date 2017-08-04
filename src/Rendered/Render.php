@@ -9,7 +9,6 @@ class Render implements rendered {
 	/**
 	 * [__construct description]
 	 * @param mixed $class	 
-	 * @return void	 
 	 */
     public function __construct($class)
     {

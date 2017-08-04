@@ -8,8 +8,7 @@ class Expression implements Rendered {
 
 	/**
 	 * [__construct description]
-	 * @param \EnergieProduction\Chart\Rendered\Rendered $render	 
-	 * @return void	 
+	 * @param \EnergieProduction\Chart\Rendered\Rendered $render
 	 */
     public function __construct(Rendered $render)
     {

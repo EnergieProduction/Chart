@@ -12,7 +12,6 @@ abstract class Builder implements Criteria {
 	/**
 	 * [__construct description]
 	 * @param mixed $content	 
-	 * @return void	 
 	 */
 	public function __construct($content)
 	{

@@ -9,7 +9,6 @@ class Criteria implements Rendered {
 	/**
 	 * [__construct description]
 	 * @param \EnergieProduction\Chart\Rendered\Rendered $render	 
-	 * @return void	 
 	 */
     public function __construct(Rendered $render)
     {
