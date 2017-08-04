@@ -6,11 +6,21 @@ class Subset implements Rendered {
 
     protected $render;
 
+    /**
+     * [__construct description]
+     * @param \EnergieProduction\Chart\Rendered\Rendered $render   
+     * @return void  
+     */
     public function __construct(Rendered $render)
     {
         $this->render = $render;
     }
 
+    /**
+     * [handle description]
+     * @param \mixed $content   
+     * @return array  
+     */
     public function handle($content)
     {
         $subset = lcfirst(class_basename(get_class($this->render->class)));

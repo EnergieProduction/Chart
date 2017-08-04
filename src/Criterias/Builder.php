@@ -9,11 +9,20 @@ abstract class Builder implements Criteria {
 
 	protected $content;
 
+	/**
+	 * [__construct description]
+	 * @param mixed $content	 
+	 * @return void	 
+	 */
 	public function __construct($content)
 	{
 		$this->content = $content;
 	}
 
+	/**
+	 * [render description]
+	 * @return array	 
+	 */
 	public function render()
 	{
 		$render = new Rendered\Render($this);

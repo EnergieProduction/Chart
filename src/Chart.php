@@ -13,6 +13,7 @@ Class Chart {
 	/**
 	 * [__construct description]
 	 * @param \Illuminate\Support\Collection $subsetList
+	 * @return void
 	 */
 	public function __construct(Collection $subsetList)
 	{
@@ -23,6 +24,7 @@ Class Chart {
 	 * [addSubset description]
 	 * @param string  $subset
 	 * @param \Closure $closure
+	 * @return void	 
 	 */
 	public function addSubset($subset, Closure $closure)
 	{
@@ -36,7 +38,7 @@ Class Chart {
 
 	/**
 	 * [render description]
-	 * @return json [description]
+	 * @return json
 	 */
 	public function render()
 	{
@@ -71,6 +73,7 @@ Class Chart {
 	 * [addSimpleSubset description]
 	 * @param string  $subset
 	 * @param \Closure $closure
+	 * @return void	 	 
 	 */
 	protected function addSimpleSubset($subset, Closure $closure)
 	{
@@ -85,6 +88,7 @@ Class Chart {
 	 * [addCascadeSubset description]
 	 * @param string  $cascadeSubsetNotation
 	 * @param \Closure $closure
+	 * @return void	 	 
 	 */
 	protected function addCascadeSubset($cascadeSubsetNotation, Closure $closure)
 	{
@@ -112,7 +116,7 @@ Class Chart {
 	/**
 	 * [makeSubsetClass description]
 	 * @param  string $subset
-	 * @return \EnergieProduction\Subsets\*
+	 * @return \EnergieProduction\Chart\Subsets\Subset
 	 */
 	protected function makeSubsetClass($subset)
 	{

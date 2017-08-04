@@ -29,3 +29,6 @@ class ChartServiceProvider extends ServiceProvider{
         });
     }
 }
+
+
+
