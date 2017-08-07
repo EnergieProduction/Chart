@@ -37,7 +37,7 @@ In progress...
 # Examples
  
 ```php
-$chart = app('EnergieProduction\Chart');
+$chart = app('chart');
 
 $chart->addSubset('title', function($title){
     $title->pushCriteria(new Criterias\Text('Solar Employment Growth by Sector, 2010-2016'));
