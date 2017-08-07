@@ -2,7 +2,7 @@
 
 namespace EnergieProduction\Chart\Rendered;
 
-class Render implements rendered {
+class Render implements Rendered {
 
 	protected $render;
 
