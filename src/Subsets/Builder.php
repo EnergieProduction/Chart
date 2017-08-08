@@ -2,10 +2,13 @@
 
 namespace EnergieProduction\Chart\Subsets;
 
+use EnergieProduction\Chart\Traits;
 use EnergieProduction\Chart\Rendered;
 use EnergieProduction\Chart\Criterias\Criteria;
 
 abstract class Builder implements Subset {
+
+	use Traits\BuilderService;
 
 	protected $criteriaList;
 	public $cascade = null;
@@ -27,7 +30,7 @@ abstract class Builder implements Subset {
 	{
 		$this->criteriaList->push($criteria);
 	}
-	
+
 	/**
 	 * [render description]
 	 * @return array	 
@@ -40,9 +43,12 @@ abstract class Builder implements Subset {
 			$formatedSubset = array_merge($formatedSubset, $criteria->render());
 		}
 
-		$render = new Rendered\Subset(new Rendered\Render($this));
+		$render = new Rendered\Render();
+		$render = new Rendered\Subset($render);
 
-		return $render->handle($formatedSubset);
+		$render->setCascade($this->cascade);
+
+		return $render->handle($this->resolveKey(), $formatedSubset);
 	}
 
     /**

@@ -2,10 +2,13 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
+use EnergieProduction\Chart\Traits;
 use EnergieProduction\Chart\Rendered;
 use EnergieProduction\Chart\Expression;
 
 abstract class Builder implements Criteria {
+
+	use Traits\BuilderService;
 
 	protected $content;
 
@@ -24,13 +27,13 @@ abstract class Builder implements Criteria {
 	 */
 	public function render()
 	{
-		$render = new Rendered\Render($this);
+		$render = new Rendered\Render();
 		$render = new Rendered\Criteria($render);
 
 	    if ($this->content instanceof Expression) {
 			$render = new Rendered\Expression($render);
 	    }
 
-		return $render->handle($this->content);
+		return $render->handle($this->resolveKey(), $this->content);
 	}
 }

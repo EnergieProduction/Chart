@@ -4,6 +4,6 @@ namespace EnergieProduction\Chart\Rendered;
 
 interface Rendered {
 
-    public function handle($content);
+    public function handle($key, $content);
 
 }

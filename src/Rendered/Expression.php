@@ -15,13 +15,8 @@ class Expression implements Rendered {
         $this->render = $render;
     }
 
-	/**
-	 * [handle description]
-	 * @param mixed $content	 
-	 * @return array	 
-	 */
-    public function handle($content)
+    public function handle($key, $content)
     {
-        return $this->render->handle("#!!" . $content->render() . "!!#");
+        return $this->render->handle($key, "#!!" . $content . "!!#");
     }
 }

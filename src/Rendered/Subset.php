@@ -5,10 +5,11 @@ namespace EnergieProduction\Chart\Rendered;
 class Subset implements Rendered {
 
     protected $render;
+    protected $cascade = null;
 
     /**
      * [__construct description]
-     * @param \EnergieProduction\Chart\Rendered\Rendered $render   
+     * @param \EnergieProduction\Chart\Rendered\Rendered $render
      */
     public function __construct(Rendered $render)
     {
@@ -16,18 +17,21 @@ class Subset implements Rendered {
     }
 
     /**
-     * [handle description]
-     * @param \mixed $content   
-     * @return array  
+     * [setCascade description]
+     * @param string
+     * @return void
      */
-    public function handle($content)
+    public function setCascade($cascade = null)
     {
-        $subset = lcfirst(class_basename(get_class($this->render->class)));
+        $this->cascade = $cascade;
+    }
 
-        if ($subset === 'series' && (! $this->render->class->cascade || starts_with($this->render->class->cascade, 'series.'))) {
+    public function handle($key, $content)
+    {
+        if ($key == 'series' && (! $this->cascade || starts_with($this->cascade, 'series.'))) {
             $content = [$content];
         }
 
-        return $this->render->handle($content);
+        return $this->render->handle($key, $content);
     }
 }
