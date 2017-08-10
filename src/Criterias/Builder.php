@@ -4,9 +4,10 @@ namespace EnergieProduction\Chart\Criterias;
 
 use EnergieProduction\Chart\Traits;
 use EnergieProduction\Chart\Rendered;
+use EnergieProduction\Chart\Contracts;
 use EnergieProduction\Chart\Expression;
 
-abstract class Builder implements Criteria {
+abstract class Builder implements Contracts\Criteria {
 
     use Traits\BuilderService;
 
@@ -30,7 +31,7 @@ abstract class Builder implements Criteria {
         $render = new Rendered\Render();
         $render = new Rendered\Criteria($render);
 
-        if ($this->content instanceof Expression) {
+        if ($this->content instanceof Contracts\Expression) {
             $this->content = $this->content->render();
             $render = new Rendered\Expression($render);
         }

@@ -4,9 +4,9 @@ namespace EnergieProduction\Chart\Subsets;
 
 use EnergieProduction\Chart\Traits;
 use EnergieProduction\Chart\Rendered;
-use EnergieProduction\Chart\Criterias\Criteria;
+use EnergieProduction\Chart\Contracts;
 
-abstract class Builder implements Subset {
+abstract class Builder implements Contracts\Subset {
 
 	use Traits\BuilderService;
 
@@ -23,10 +23,10 @@ abstract class Builder implements Subset {
 
 	/**
 	 * [pushCriteria description]
-	 * @param \EnergieProduction\Chart\Criterias\Criteria  $criteria
+	 * @param \EnergieProduction\Chart\Contracts\Criteria  $criteria
 	 * @return void	 
 	 */
-	public function pushCriteria(Criteria $criteria)
+	public function pushCriteria(Contracts\Criteria $criteria)
 	{
 		$this->criteriaList->push($criteria);
 	}
