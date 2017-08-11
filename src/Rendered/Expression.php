@@ -15,6 +15,12 @@ class Expression implements Rendered {
         $this->render = $render;
     }
 
+    /**
+    * [handle description]
+    * @param string $key  
+    * @param string $content  
+    * @return array  
+    */
     public function handle($key, $content)
     {
         return $this->render->handle($key, "#!!" . $content . "!!#");

@@ -26,6 +26,12 @@ class Subset implements Rendered {
         $this->cascade = $cascade;
     }
 
+    /**
+    * [handle description]
+    * @param string $key  
+    * @param string $content  
+    * @return array  
+    */
     public function handle($key, $content)
     {
         if ($key == 'series' && (! $this->cascade || starts_with($this->cascade, 'series.'))) {

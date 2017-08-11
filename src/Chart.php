@@ -105,7 +105,7 @@ Class Chart {
 	/**
 	 * [callFunc description]
 	 * @param  \Closure $closure
-	 * @param  \EnergieProduction\Subsets\* $class
+	 * @param  \EnergieProduction\Chart\Contracts\Subsets $class
 	 */
 	protected function callFunc(Closure $closure, $class)
 	{
@@ -115,7 +115,7 @@ Class Chart {
 	/**
 	 * [makeSubsetClass description]
 	 * @param  string $subset
-	 * @return \EnergieProduction\Chart\Subsets\Subset
+	 * @return \EnergieProduction\Chart\Contracts\Subsets
 	 */
 	protected function makeSubsetClass($subset)
 	{
