@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class GridLineWidth extends Builder {
-
-	//
+class GridLineWidth extends Builder {
 
 }

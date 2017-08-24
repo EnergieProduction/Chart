@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class Step extends Builder {
-
-	//
+class Step extends Builder {
 
 }

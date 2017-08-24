@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class LineWidth extends Builder {
-
-	//
+class LineWidth extends Builder {
 
 }

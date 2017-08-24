@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class Crosshairs extends Builder {
-
-	//
+class Crosshairs extends Builder {
 
 }

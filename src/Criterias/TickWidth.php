@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class TickWidth extends Builder {
-
-	//
+class TickWidth extends Builder {
 
 }

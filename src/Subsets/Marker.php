@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Subsets;
 
-Class Marker extends Builder {
-
-	//
+class Marker extends Builder {
 
 }

@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class AlternateGridColor extends Builder {
-
-	//
+class AlternateGridColor extends Builder {
 
 }

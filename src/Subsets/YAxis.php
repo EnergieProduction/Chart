@@ -1,9 +1,7 @@
 <?php
 
-namespace EnergieProduction\Chart\Subsets;
+namespace EnergieProduction\Chart\subsets;
 
-Class YAxis extends Builder {
-
-	//
+class YAxis extends Builder {
 
 }

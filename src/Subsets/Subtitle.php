@@ -1,9 +1,7 @@
 <?php
 
-namespace EnergieProduction\Chart\Subsets;
+namespace EnergieProduction\Chart\subsets;
 
-Class Subtitle extends Builder {
-
-	//
+class Subtitle extends Builder {
 
 }

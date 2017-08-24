@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class EnableMouseTracking extends Builder {
-
-	//
+class EnableMouseTracking extends Builder {
 
 }

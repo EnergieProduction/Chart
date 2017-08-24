@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Subsets;
 
-Class Area extends Builder {
-
-	//
+class Area extends Builder {
 
 }

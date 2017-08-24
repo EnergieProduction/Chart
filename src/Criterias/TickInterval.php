@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class TickInterval extends Builder {
-
-	//
+class TickInterval extends Builder {
 
 }

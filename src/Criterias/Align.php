@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class Align extends Builder {
-
-	//
+class Align extends Builder {
 
 }

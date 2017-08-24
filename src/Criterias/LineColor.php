@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class LineColor extends Builder {
-
-	//
+class LineColor extends Builder {
 
 }

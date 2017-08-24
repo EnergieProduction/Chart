@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Subsets;
 
-Class DataLabels extends Builder {
-
-	//
+class DataLabels extends Builder {
 
 }

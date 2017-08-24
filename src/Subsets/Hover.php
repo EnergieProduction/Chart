@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Subsets;
 
-Class Hover extends Builder {
-
-	//
+class Hover extends Builder {
 
 }

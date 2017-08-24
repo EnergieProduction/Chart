@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class PointStart extends Builder {
-
-	//
+class PointStart extends Builder {
 
 }

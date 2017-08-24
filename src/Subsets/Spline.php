@@ -2,7 +2,6 @@
 
 namespace EnergieProduction\Chart\Subsets;
 
-Class Spline extends Builder {
-
+class Spline extends Builder {
 
 }

@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Subsets;
 
-Class PlotBands extends Builder {
-
-	//
+class PlotBands extends Builder {
 
 }

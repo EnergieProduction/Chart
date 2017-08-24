@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class BorderWidth extends Builder {
-
-	//
+class BorderWidth extends Builder {
 
 }

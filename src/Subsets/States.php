@@ -2,7 +2,6 @@
 
 namespace EnergieProduction\Chart\Subsets;
 
-Class States extends Builder {
-
+class States extends Builder {
 
 }

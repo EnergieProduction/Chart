@@ -1,9 +1,7 @@
 <?php
 
-namespace EnergieProduction\Chart\Subsets;
+namespace EnergieProduction\Chart\subsets;
 
-Class Tooltip extends Builder {
-
-	//
+class Tooltip extends Builder {
 
 }

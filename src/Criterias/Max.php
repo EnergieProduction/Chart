@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class Max extends Builder {
-
-	//
+class Max extends Builder {
 
 }

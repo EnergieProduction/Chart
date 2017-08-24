@@ -2,8 +2,6 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Class Overflow extends Builder {
-
-	//
+class Overflow extends Builder {
 
 }
