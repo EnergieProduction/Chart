@@ -2,40 +2,36 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-use EnergieProduction\Chart\Traits;
-use EnergieProduction\Chart\Rendered;
-use EnergieProduction\Chart\Contracts;
-use EnergieProduction\Chart\Expression;
+use EnergieProduction\Chart\Contracts\Criteria;
 
-abstract class Builder implements Contracts\Criteria {
-
-    use Traits\BuilderService;
+abstract class Builder implements Criteria {
 
     protected $content;
 
-    /**
-    * [__construct description]
-    * @param mixed $content	 
-    */
     public function __construct($content)
     {
         $this->content = $content;
     }
 
-    /**
-    * [render description]
-    * @return array	 
-    */
-    public function render()
+    public function getKey()
     {
-        $render = new Rendered\Render();
-        $render = new Rendered\Criteria($render);
-
-        if ($this->content instanceof Contracts\Expression) {
-            $this->content = $this->content->render();
-            $render = new Rendered\Expression($render);
+        if (isset($this->key)) {
+            return $this->key;
         }
 
-        return $render->handle($this->resolveKey(), $this->content);
+        return lcfirst(class_basename(get_class($this)));
+    }
+
+    public function getContent()
+    {
+        return $this->content;
+    }
+
+    public function render()
+    {   
+        $render = new Renderable\Render();
+        $render = new Renderable\Criteria($render);
+
+        return $render->handle($this->getKey(), $content);
     }
 }

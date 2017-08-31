@@ -22,10 +22,7 @@ class ChartServiceProvider extends ServiceProvider{
     public function register()
     {
         $this->app->bind('chart', function($app) {
-
-            $collection = new Collection;
-
-            return new Chart($collection);
+            return new Chart();
         });
     }
 }
