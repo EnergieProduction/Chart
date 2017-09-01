@@ -4,7 +4,7 @@ namespace EnergieProduction\Chart;
 
 use closure;
 use EnergieProduction\Chart\Renderable;
-use EnergieProduction\Chart\Contracts\Criteria;
+use EnergieProduction\Chart\Contracts\Expression;
 
 class Option {
 
@@ -15,17 +15,12 @@ class Option {
         $this->options = [];
     }
 
-    public function pushCriteria(Criteria $criteria)
-    {
-        $render = new Renderable\Render();
-        $render = new Renderable\Criteria($render);
-
-        $this->options = array_merge($this->options, $render->handle(
-            $criteria->getKey(), 
-            $criteria->getcontent()
-        ));
-    }
-
+    /**
+     * [pushSubset description]
+     * @param  string  $subset
+     * @param  \closure $closure
+     * @return void
+     */
     public function pushSubset($subset, closure $closure)
     {
         $option = new self;
@@ -41,6 +36,32 @@ class Option {
         ));
     }
 
+    /**
+     * [pushCriteria description]
+     * @param  mixed $criteria
+     * @return void
+     */
+    public function pushCriteria($criteria)
+    {
+        $content = $criteria->getcontent();
+        
+        $render = new Renderable\Render();
+        $render = new Renderable\Criteria($render);
+
+        if ($content instanceof Expression) {
+            $render = new Renderable\Expression($render);
+        }
+
+        $this->options = array_merge($this->options, $render->handle(
+            $criteria->resolveKey(), 
+            $content
+        ));
+    }
+
+    /**
+     * [render description]
+     * @return array
+     */
     public function render()
     {
         return $this->options;

@@ -4,7 +4,9 @@ namespace EnergieProduction\Chart\Renderable;
 
 use EnergieProduction\Chart\Contracts\Renderable;
 
-class Criteria implements Renderable {
+class Expression implements Renderable {
+
+	protected $render;
 
 	/**
 	 * [__construct description]
@@ -23,6 +25,6 @@ class Criteria implements Renderable {
      */
     public function handle($key, $content)
     {
-        return $this->render->handle($key, $content);
-    }           
+        return $this->render->handle($key, "#!!" . $content->render() . "!!#");
+    }
 }

@@ -2,8 +2,16 @@
 
 namespace EnergieProduction\Chart\Renderable;
 
-class Render {
-        
+use EnergieProduction\Chart\Contracts\Renderable;
+
+class Render implements Renderable {
+
+    /**
+     * [handle description]
+     * @param  string $key
+     * @param  mixed $content
+     * @return array
+     */        
     public function handle($key, $content)
     {
         return [$key => $content];

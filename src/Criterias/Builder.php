@@ -8,12 +8,20 @@ abstract class Builder implements Criteria {
 
     protected $content;
 
+    /**
+     * [__construct description]
+     * @param mixed $content
+     */
     public function __construct($content)
     {
         $this->content = $content;
     }
 
-    public function getKey()
+    /**
+     * [resolveKey description]
+     * @return string
+     */
+    public function resolveKey()
     {
         if (isset($this->key)) {
             return $this->key;
@@ -22,16 +30,12 @@ abstract class Builder implements Criteria {
         return lcfirst(class_basename(get_class($this)));
     }
 
+    /**
+     * [getContent description]
+     * @return mixed
+     */
     public function getContent()
     {
         return $this->content;
-    }
-
-    public function render()
-    {   
-        $render = new Renderable\Render();
-        $render = new Renderable\Criteria($render);
-
-        return $render->handle($this->getKey(), $content);
     }
 }
