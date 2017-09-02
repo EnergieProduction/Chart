@@ -41,29 +41,29 @@ In progress...
 ```php
 $chart = app('chart');
 
-$chart->addSubset('title', function($title){
+$chart->pushSubset('title', function($title){
     $title->pushCriteria(new Criterias\Text('Solar Employment Growth by Sector, 2010-2016'));
 });
 
-$chart->addSubset('subtitle', function($subtitle){
+$chart->pushSubset('subtitle', function($subtitle){
     $subtitle->pushCriteria(new Criterias\Text('Source: thesolarfoundation.com'));
 });
 
-$chart->addSubset('yAxis.title', function($title){
+$chart->pushSubset('yAxis.title', function($title){
     $title->pushCriteria(new Criterias\Text('Number of Employees'));
 });
 
-$chart->addSubset('legend', function($legend){
+$chart->pushSubset('legend', function($legend){
     $legend->pushCriteria(new Criterias\Layout('vertical'));
     $legend->pushCriteria(new Criterias\Align('right'));
     $legend->pushCriteria(new Criterias\VerticalAlign('middle'));
 });
 
-$chart->addSubset('plotOptions.series', function($plotOptions){
+$chart->pushSubset('plotOptions.series', function($plotOptions){
     $plotOptions->pushCriteria(new Criterias\PointStart(2010));
 });
 
-$chart->addSubset('series', function($series){
+$chart->pushSubset('series', function($series){
     $series->pushCriteria(new Criterias\Name('Installation'));
     $series->pushCriteria(new Criterias\Data([43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]));
 });
