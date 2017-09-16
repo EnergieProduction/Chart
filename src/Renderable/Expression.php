@@ -25,6 +25,6 @@ class Expression implements Renderable {
      */
     public function handle($key, $content)
     {
-        return $this->render->handle($key, "#!!" . $content->render() . "!!#");
+        return $this->render->handle($key, "#!!" . $content . "!!#");
     }
 }

@@ -44,12 +44,13 @@ class Option {
     public function pushCriteria($criteria)
     {
         $content = $criteria->getcontent();
-        
+
         $render = new Renderable\Render();
         $render = new Renderable\Criteria($render);
 
         if ($content instanceof Expression) {
             $render = new Renderable\Expression($render);
+            $content = $content->render();
         }
 
         $this->options = array_merge($this->options, $render->handle(
