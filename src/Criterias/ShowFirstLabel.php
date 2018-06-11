@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ShowFirstLabel extends Builder {
+class ShowFirstLabel extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Overshoot extends Builder {
+class Overshoot extends Builder
+{
 
 }

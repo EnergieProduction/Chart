@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ConnectNulls extends Builder {
+class ConnectNulls extends Builder
+{
 
 }

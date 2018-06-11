@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SlicedOffset extends Builder {
+class SlicedOffset extends Builder
+{
 
 }

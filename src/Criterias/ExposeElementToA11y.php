@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ExposeElementToA11y extends Builder {
+class ExposeElementToA11y extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ActiveColor extends Builder {
+class ActiveColor extends Builder
+{
 
 }

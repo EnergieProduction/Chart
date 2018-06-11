@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class AfterBreaks extends Builder {
+class AfterBreaks extends Builder
+{
 
 }

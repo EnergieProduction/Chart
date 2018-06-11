@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class InnerRadius extends Builder {
+class InnerRadius extends Builder
+{
 
 }

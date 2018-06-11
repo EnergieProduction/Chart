@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SoftMax extends Builder {
+class SoftMax extends Builder
+{
 
 }

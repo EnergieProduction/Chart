@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PointBreak extends Builder {
+class PointBreak extends Builder
+{
 
 }

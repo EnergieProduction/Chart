@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PlotShadow extends Builder {
+class PlotShadow extends Builder
+{
 
 }

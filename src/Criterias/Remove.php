@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Remove extends Builder {
+class Remove extends Builder
+{
 
 }

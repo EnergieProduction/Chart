@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class FitToPlot extends Builder {
+class FitToPlot extends Builder
+{
 
 }

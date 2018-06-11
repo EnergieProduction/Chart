@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ValuePrefix extends Builder {
+class ValuePrefix extends Builder
+{
 
 }

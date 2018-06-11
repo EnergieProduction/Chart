@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Repeat extends Builder {
+class Repeat extends Builder
+{
 
 }

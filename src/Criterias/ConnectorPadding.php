@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ConnectorPadding extends Builder {
+class ConnectorPadding extends Builder
+{
 
 }

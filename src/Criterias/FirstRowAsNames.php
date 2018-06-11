@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class FirstRowAsNames extends Builder {
+class FirstRowAsNames extends Builder
+{
 
 }

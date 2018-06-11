@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Onclick extends Builder {
+class Onclick extends Builder
+{
 
 }

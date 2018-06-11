@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MinorGridLineDashStyle extends Builder {
+class MinorGridLineDashStyle extends Builder
+{
 
 }

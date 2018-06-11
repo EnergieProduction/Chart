@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class WhiskerColor extends Builder {
+class WhiskerColor extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class GridLineColor extends Builder {
+class GridLineColor extends Builder
+{
 
 }

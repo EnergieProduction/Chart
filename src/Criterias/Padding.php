@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Padding extends Builder {
+class Padding extends Builder
+{
 
 }

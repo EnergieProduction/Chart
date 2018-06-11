@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PointPlacement extends Builder {
+class PointPlacement extends Builder
+{
 
 }

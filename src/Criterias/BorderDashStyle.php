@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class BorderDashStyle extends Builder {
+class BorderDashStyle extends Builder
+{
 
 }

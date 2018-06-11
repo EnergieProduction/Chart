@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ActiveDataLabelStyle extends Builder {
+class ActiveDataLabelStyle extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Reversed extends Builder {
+class Reversed extends Builder
+{
 
 }

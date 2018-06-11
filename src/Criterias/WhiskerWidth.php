@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class WhiskerWidth extends Builder {
+class WhiskerWidth extends Builder
+{
 
 }

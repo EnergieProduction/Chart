@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ColorByPoint extends Builder {
+class ColorByPoint extends Builder
+{
 
 }

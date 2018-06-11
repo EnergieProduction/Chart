@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SpacingLeft extends Builder {
+class SpacingLeft extends Builder
+{
 
 }

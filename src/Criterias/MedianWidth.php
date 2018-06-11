@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MedianWidth extends Builder {
+class MedianWidth extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Floating extends Builder {
+class Floating extends Builder
+{
 
 }

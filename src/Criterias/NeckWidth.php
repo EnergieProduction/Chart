@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class NeckWidth extends Builder {
+class NeckWidth extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class DateTimeLabelFormats extends Builder {
+class DateTimeLabelFormats extends Builder
+{
 
 }

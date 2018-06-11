@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SymbolFill extends Builder {
+class SymbolFill extends Builder
+{
 
 }

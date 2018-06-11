@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class AfterAnimate extends Builder {
+class AfterAnimate extends Builder
+{
 
 }

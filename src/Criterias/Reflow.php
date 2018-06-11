@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Reflow extends Builder {
+class Reflow extends Builder
+{
 
 }

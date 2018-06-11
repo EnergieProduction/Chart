@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Drillupall extends Builder {
+class Drillupall extends Builder
+{
 
 }

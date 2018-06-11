@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Positioner extends Builder {
+class Positioner extends Builder
+{
 
 }

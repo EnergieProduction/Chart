@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Thickness extends Builder {
+class Thickness extends Builder
+{
 
 }

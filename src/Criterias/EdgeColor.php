@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class EdgeColor extends Builder {
+class EdgeColor extends Builder
+{
 
 }

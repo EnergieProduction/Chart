@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Split extends Builder {
+class Split extends Builder
+{
 
 }

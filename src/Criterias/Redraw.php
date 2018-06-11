@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Redraw extends Builder {
+class Redraw extends Builder
+{
 
 }

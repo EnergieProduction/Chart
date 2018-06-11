@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Snap extends Builder {
+class Snap extends Builder
+{
 
 }

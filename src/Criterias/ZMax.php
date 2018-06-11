@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ZMax extends Builder {
+class ZMax extends Builder
+{
 
 }

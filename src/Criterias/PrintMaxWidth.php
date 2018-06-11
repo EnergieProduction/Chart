@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PrintMaxWidth extends Builder {
+class PrintMaxWidth extends Builder
+{
 
 }

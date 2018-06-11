@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class LevelIsConstant extends Builder {
+class LevelIsConstant extends Builder
+{
 
 }

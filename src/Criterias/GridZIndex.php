@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class GridZIndex extends Builder {
+class GridZIndex extends Builder
+{
 
 }

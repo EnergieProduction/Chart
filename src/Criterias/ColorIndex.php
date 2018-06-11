@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ColorIndex extends Builder {
+class ColorIndex extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class LegendIndex extends Builder {
+class LegendIndex extends Builder
+{
 
 }

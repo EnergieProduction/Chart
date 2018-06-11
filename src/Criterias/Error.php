@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Error extends Builder {
+class Error extends Builder
+{
 
 }

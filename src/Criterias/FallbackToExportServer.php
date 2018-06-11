@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class FallbackToExportServer extends Builder {
+class FallbackToExportServer extends Builder
+{
 
 }

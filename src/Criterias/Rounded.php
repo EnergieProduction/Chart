@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Rounded extends Builder {
+class Rounded extends Builder
+{
 
 }

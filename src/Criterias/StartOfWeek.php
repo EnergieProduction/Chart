@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class StartOfWeek extends Builder {
+class StartOfWeek extends Builder
+{
 
 }

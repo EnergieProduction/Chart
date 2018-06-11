@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MarginRight extends Builder {
+class MarginRight extends Builder
+{
 
 }

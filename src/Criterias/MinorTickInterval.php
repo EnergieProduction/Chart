@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MinorTickInterval extends Builder {
+class MinorTickInterval extends Builder
+{
 
 }

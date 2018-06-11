@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SortIndex extends Builder {
+class SortIndex extends Builder
+{
 
 }

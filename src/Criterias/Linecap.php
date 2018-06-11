@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Linecap extends Builder {
+class Linecap extends Builder
+{
 
 }

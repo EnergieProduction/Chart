@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ScreenReaderSectionFormatter extends Builder {
+class ScreenReaderSectionFormatter extends Builder
+{
 
 }

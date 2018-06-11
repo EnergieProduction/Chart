@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PointInterval extends Builder {
+class PointInterval extends Builder
+{
 
 }

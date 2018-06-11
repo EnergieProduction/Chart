@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class NeckHeight extends Builder {
+class NeckHeight extends Builder
+{
 
 }

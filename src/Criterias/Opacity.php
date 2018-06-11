@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Opacity extends Builder {
+class Opacity extends Builder
+{
 
 }

@@ -2,9 +2,9 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-Interface Criteria {
+interface Criteria
+{
 
-	// public function render();
-	// public function resolveKey();
-
+    // public function render();
+    // public function resolveKey();
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class IgnoreHiddenSeries extends Builder {
+class IgnoreHiddenSeries extends Builder
+{
 
 }

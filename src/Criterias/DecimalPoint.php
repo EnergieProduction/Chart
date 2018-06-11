@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class DecimalPoint extends Builder {
+class DecimalPoint extends Builder
+{
 
 }

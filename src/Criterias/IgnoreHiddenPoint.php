@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class IgnoreHiddenPoint extends Builder {
+class IgnoreHiddenPoint extends Builder
+{
 
 }

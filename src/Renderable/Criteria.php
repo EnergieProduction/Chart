@@ -4,12 +4,13 @@ namespace EnergieProduction\Chart\Renderable;
 
 use EnergieProduction\Chart\Contracts\Renderable;
 
-class Criteria implements Renderable {
+class Criteria implements Renderable
+{
 
-	/**
-	 * [__construct description]
-	 * @param \EnergieProduction\Chart\Contracts\Renderable $render
-	 */
+    /**
+     * [__construct description]
+     * @param \EnergieProduction\Chart\Contracts\Renderable $render
+     */
     public function __construct(Renderable $render)
     {
         $this->render = $render;
@@ -24,5 +25,5 @@ class Criteria implements Renderable {
     public function handle($key, $content)
     {
         return $this->render->handle($key, $content);
-    }           
+    }
 }

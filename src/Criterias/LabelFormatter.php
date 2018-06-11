@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class LabelFormatter extends Builder {
+class LabelFormatter extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Animation extends Builder {
+class Animation extends Builder
+{
 
 }

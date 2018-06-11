@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Brightness extends Builder {
+class Brightness extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class OnTableAnchorClick extends Builder {
+class OnTableAnchorClick extends Builder
+{
 
 }

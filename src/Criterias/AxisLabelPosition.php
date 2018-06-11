@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class AxisLabelPosition extends Builder {
+class AxisLabelPosition extends Builder
+{
 
 }

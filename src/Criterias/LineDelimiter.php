@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class LineDelimiter extends Builder {
+class LineDelimiter extends Builder
+{
 
 }

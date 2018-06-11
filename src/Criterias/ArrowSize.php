@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ArrowSize extends Builder {
+class ArrowSize extends Builder
+{
 
 }

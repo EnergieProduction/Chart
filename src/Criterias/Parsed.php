@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Parsed extends Builder {
+class Parsed extends Builder
+{
 
 }

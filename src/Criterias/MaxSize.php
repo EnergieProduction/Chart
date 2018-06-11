@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MaxSize extends Builder {
+class MaxSize extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Ceiling extends Builder {
+class Ceiling extends Builder
+{
 
 }

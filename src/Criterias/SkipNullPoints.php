@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SkipNullPoints extends Builder {
+class SkipNullPoints extends Builder
+{
 
 }

@@ -4,7 +4,8 @@ namespace EnergieProduction\Chart\Criterias;
 
 use EnergieProduction\Chart\Contracts\Criteria;
 
-abstract class Builder implements Criteria {
+abstract class Builder implements Criteria
+{
 
     protected $content;
 

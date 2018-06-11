@@ -6,7 +6,8 @@ use closure;
 use EnergieProduction\Chart\Renderable;
 use EnergieProduction\Chart\Contracts\Expression;
 
-class Option {
+class Option
+{
 
     protected $options;
 
@@ -31,7 +32,7 @@ class Option {
         $render = new Renderable\Subset($render);
 
         $this->options = array_merge($this->options, $render->handle(
-            $subset, 
+            $subset,
             $option->render()
         ));
     }
@@ -54,7 +55,7 @@ class Option {
         }
 
         $this->options = array_merge($this->options, $render->handle(
-            $criteria->resolveKey(), 
+            $criteria->resolveKey(),
             $content
         ));
     }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class AllowOverlap extends Builder {
+class AllowOverlap extends Builder
+{
 
 }

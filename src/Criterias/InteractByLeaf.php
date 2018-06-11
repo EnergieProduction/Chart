@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class InteractByLeaf extends Builder {
+class InteractByLeaf extends Builder
+{
 
 }

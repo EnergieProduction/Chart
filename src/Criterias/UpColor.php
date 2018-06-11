@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class UpColor extends Builder {
+class UpColor extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class AllowDrillToNode extends Builder {
+class AllowDrillToNode extends Builder
+{
 
 }

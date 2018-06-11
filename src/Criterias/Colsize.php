@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Colsize extends Builder {
+class Colsize extends Builder
+{
 
 }

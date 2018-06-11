@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ViewDistance extends Builder {
+class ViewDistance extends Builder
+{
 
 }

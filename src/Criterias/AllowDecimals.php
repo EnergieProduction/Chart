@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class AllowDecimals extends Builder {
+class AllowDecimals extends Builder
+{
 
 }

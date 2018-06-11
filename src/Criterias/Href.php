@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Href extends Builder {
+class Href extends Builder
+{
 
 }
