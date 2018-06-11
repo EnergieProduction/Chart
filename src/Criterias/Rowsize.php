@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Rowsize extends Builder {
+class Rowsize extends Builder
+{
 
 }

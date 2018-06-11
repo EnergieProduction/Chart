@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PlotBorderWidth extends Builder {
+class PlotBorderWidth extends Builder
+{
 
 }

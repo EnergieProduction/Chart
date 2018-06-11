@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class YLow extends Builder {
+class YLow extends Builder
+{
 
 }

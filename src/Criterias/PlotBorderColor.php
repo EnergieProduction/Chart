@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PlotBorderColor extends Builder {
+class PlotBorderColor extends Builder
+{
 
 }

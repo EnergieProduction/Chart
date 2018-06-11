@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ConnectorColor extends Builder {
+class ConnectorColor extends Builder
+{
 
 }

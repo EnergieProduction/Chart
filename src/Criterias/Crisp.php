@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Crisp extends Builder {
+class Crisp extends Builder
+{
 
 }

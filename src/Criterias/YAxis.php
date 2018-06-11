@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class YAxis extends Builder {
+class YAxis extends Builder
+{
 
 }

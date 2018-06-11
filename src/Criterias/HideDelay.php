@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class HideDelay extends Builder {
+class HideDelay extends Builder
+{
 
 }

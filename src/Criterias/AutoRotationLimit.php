@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class AutoRotationLimit extends Builder {
+class AutoRotationLimit extends Builder
+{
 
 }

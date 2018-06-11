@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PinchType extends Builder {
+class PinchType extends Builder
+{
 
 }

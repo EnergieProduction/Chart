@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class TabThroughPoints extends Builder {
+class TabThroughPoints extends Builder
+{
 
 }

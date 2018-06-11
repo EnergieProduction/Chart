@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ItemHiddenStyle extends Builder {
+class ItemHiddenStyle extends Builder
+{
 
 }

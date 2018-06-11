@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ZoomType extends Builder {
+class ZoomType extends Builder
+{
 
 }

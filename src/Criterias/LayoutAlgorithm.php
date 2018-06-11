@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class LayoutAlgorithm extends Builder {
+class LayoutAlgorithm extends Builder
+{
 
 }

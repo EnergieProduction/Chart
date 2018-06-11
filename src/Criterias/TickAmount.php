@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class TickAmount extends Builder {
+class TickAmount extends Builder
+{
 
 }

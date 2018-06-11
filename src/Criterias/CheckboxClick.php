@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class CheckboxClick extends Builder {
+class CheckboxClick extends Builder
+{
 
 }

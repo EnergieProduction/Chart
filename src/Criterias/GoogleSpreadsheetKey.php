@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class GoogleSpreadsheetKey extends Builder {
+class GoogleSpreadsheetKey extends Builder
+{
 
 }

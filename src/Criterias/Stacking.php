@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Stacking extends Builder {
+class Stacking extends Builder
+{
 
 }

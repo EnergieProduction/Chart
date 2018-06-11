@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Floor extends Builder {
+class Floor extends Builder
+{
 
 }

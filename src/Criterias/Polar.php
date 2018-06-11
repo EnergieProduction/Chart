@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Polar extends Builder {
+class Polar extends Builder
+{
 
 }

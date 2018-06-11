@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class RenderTo extends Builder {
+class RenderTo extends Builder
+{
 
 }

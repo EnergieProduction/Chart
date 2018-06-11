@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SelectionMarkerFill extends Builder {
+class SelectionMarkerFill extends Builder
+{
 
 }

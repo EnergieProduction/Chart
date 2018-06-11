@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ZMin extends Builder {
+class ZMin extends Builder
+{
 
 }

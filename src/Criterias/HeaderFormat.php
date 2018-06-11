@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class HeaderFormat extends Builder {
+class HeaderFormat extends Builder
+{
 
 }

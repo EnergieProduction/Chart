@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SwitchRowsAndColumns extends Builder {
+class SwitchRowsAndColumns extends Builder
+{
 
 }

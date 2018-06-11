@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class StartRow extends Builder {
+class StartRow extends Builder
+{
 
 }

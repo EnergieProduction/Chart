@@ -5,7 +5,8 @@ namespace EnergieProduction\Chart;
 use closure;
 use EnergieProduction\Chart\Exceptions\DotNotationNotAvailableException;
 
-class Chart {
+class Chart
+{
 
     protected $options = [];
 
@@ -25,14 +26,12 @@ class Chart {
         $render = $option->render();
 
         if (starts_with($subset, 'series')) {
-
             if (str_contains($subset, '.')) {
                 throw new Exceptions\DotNotationNotAvailableException();
             }
 
             $this->options['series'][] = $render['series'];
-        }
-        else {
+        } else {
             $this->options = array_merge_recursive($this->options, $render);
         }
     }
@@ -63,5 +62,5 @@ class Chart {
         $formatedOption = str_replace('!!#"', '', $formatedOption);
 
         return $formatedOption;
-    }  
+    }
 }

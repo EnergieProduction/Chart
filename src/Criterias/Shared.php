@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Shared extends Builder {
+class Shared extends Builder
+{
 
 }

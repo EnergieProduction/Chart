@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class BreakSize extends Builder {
+class BreakSize extends Builder
+{
 
 }

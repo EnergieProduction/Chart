@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class StemColor extends Builder {
+class StemColor extends Builder
+{
 
 }

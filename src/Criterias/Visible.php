@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Visible extends Builder {
+class Visible extends Builder
+{
 
 }

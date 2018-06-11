@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ZoneAxis extends Builder {
+class ZoneAxis extends Builder
+{
 
 }

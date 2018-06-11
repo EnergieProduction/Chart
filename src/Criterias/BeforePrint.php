@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class BeforePrint extends Builder {
+class BeforePrint extends Builder
+{
 
 }

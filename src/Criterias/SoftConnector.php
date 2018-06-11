@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SoftConnector extends Builder {
+class SoftConnector extends Builder
+{
 
 }

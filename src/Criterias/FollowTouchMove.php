@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class FollowTouchMove extends Builder {
+class FollowTouchMove extends Builder
+{
 
 }

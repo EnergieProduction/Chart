@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PointDescriptionFormatter extends Builder {
+class PointDescriptionFormatter extends Builder
+{
 
 }

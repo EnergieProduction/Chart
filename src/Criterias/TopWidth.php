@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class TopWidth extends Builder {
+class TopWidth extends Builder
+{
 
 }

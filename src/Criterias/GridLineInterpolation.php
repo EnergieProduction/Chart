@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class GridLineInterpolation extends Builder {
+class GridLineInterpolation extends Builder
+{
 
 }

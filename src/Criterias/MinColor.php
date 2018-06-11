@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MinColor extends Builder {
+class MinColor extends Builder
+{
 
 }

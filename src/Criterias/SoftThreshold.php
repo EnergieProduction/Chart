@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SoftThreshold extends Builder {
+class SoftThreshold extends Builder
+{
 
 }

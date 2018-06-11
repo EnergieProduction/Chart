@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Drilldown extends Builder {
+class Drilldown extends Builder
+{
 
 }

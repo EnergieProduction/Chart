@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class DefaultSeriesType extends Builder {
+class DefaultSeriesType extends Builder
+{
 
 }

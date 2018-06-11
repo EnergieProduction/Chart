@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MinSize extends Builder {
+class MinSize extends Builder
+{
 
 }

@@ -21,7 +21,7 @@ class TestRenderable extends \PHPUnit\Framework\TestCase
 
         $result = $render->handle('test_key', 'test_content');
 
-        $this->assertArraySubset(['test_key' => 'test_content'], $result);        
+        $this->assertArraySubset(['test_key' => 'test_content'], $result);
     }
 
     public function testRenderExpression()
@@ -32,7 +32,7 @@ class TestRenderable extends \PHPUnit\Framework\TestCase
 
         $result = $render->handle('test_key', 'test_content');
 
-        $this->assertArraySubset(['test_key' => '#!!test_content!!#'], $result);        
+        $this->assertArraySubset(['test_key' => '#!!test_content!!#'], $result);
     }
 
     public function testRenderCriteriaWithExpression()
@@ -45,7 +45,7 @@ class TestRenderable extends \PHPUnit\Framework\TestCase
 
         $result = $render->handle('test_key', 'test_content');
 
-        $this->assertArraySubset(['test_key' => '#!!test_content!!#'], $result);        
+        $this->assertArraySubset(['test_key' => '#!!test_content!!#'], $result);
     }
 
     public function testRenderSubset()
@@ -56,7 +56,7 @@ class TestRenderable extends \PHPUnit\Framework\TestCase
 
         $result = $render->handle('test_key', 'test_content');
 
-        $this->assertArraySubset(['test_key' => 'test_content'], $result);        
+        $this->assertArraySubset(['test_key' => 'test_content'], $result);
     }
 
     public function testRenderSubsetWhitDotNotation()
@@ -81,5 +81,5 @@ class TestRenderable extends \PHPUnit\Framework\TestCase
         $result = $render->handle('test.key', 'test_content');
 
         $this->assertArraySubset(['test' => ['key' => '#!!test_content!!#']], $result);
-    }    
+    }
 }

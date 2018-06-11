@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class GetExtremesFromAll extends Builder {
+class GetExtremesFromAll extends Builder
+{
 
 }

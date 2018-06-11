@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class StaggerLines extends Builder {
+class StaggerLines extends Builder
+{
 
 }

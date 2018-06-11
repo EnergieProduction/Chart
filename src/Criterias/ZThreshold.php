@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ZThreshold extends Builder {
+class ZThreshold extends Builder
+{
 
 }

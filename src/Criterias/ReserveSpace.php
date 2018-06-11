@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ReserveSpace extends Builder {
+class ReserveSpace extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MouseOut extends Builder {
+class MouseOut extends Builder
+{
 
 }

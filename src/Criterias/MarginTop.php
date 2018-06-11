@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MarginTop extends Builder {
+class MarginTop extends Builder
+{
 
 }

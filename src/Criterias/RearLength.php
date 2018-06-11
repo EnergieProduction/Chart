@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class RearLength extends Builder {
+class RearLength extends Builder
+{
 
 }

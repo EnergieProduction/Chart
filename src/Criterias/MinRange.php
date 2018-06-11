@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MinRange extends Builder {
+class MinRange extends Builder
+{
 
 }

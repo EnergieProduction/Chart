@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class StartAngle extends Builder {
+class StartAngle extends Builder
+{
 
 }

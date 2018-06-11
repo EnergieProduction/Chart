@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PointDescriptionThreshold extends Builder {
+class PointDescriptionThreshold extends Builder
+{
 
 }

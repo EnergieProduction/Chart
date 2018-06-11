@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class StickyTracking extends Builder {
+class StickyTracking extends Builder
+{
 
 }

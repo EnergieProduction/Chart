@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class StartOnTick extends Builder {
+class StartOnTick extends Builder
+{
 
 }

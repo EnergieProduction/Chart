@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class AlignTicks extends Builder {
+class AlignTicks extends Builder
+{
 
 }

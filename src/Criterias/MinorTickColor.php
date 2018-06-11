@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MinorTickColor extends Builder {
+class MinorTickColor extends Builder
+{
 
 }

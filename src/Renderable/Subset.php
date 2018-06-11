@@ -4,7 +4,8 @@ namespace EnergieProduction\Chart\Renderable;
 
 use EnergieProduction\Chart\Contracts\Renderable;
 
-class Subset implements Renderable {
+class Subset implements Renderable
+{
 
     /**
      * [__construct description]
@@ -24,7 +25,6 @@ class Subset implements Renderable {
     public function handle($key, $content)
     {
         if (str_contains($key, '.')) {
-
             $path = explode('.', $key);
 
             $result = [];
@@ -35,7 +35,7 @@ class Subset implements Renderable {
         }
 
         return $this->render->handle($key, $content);
-    }         
+    }
 
     /**
      * [dotNotationToArray description]
@@ -46,15 +46,14 @@ class Subset implements Renderable {
      */
     protected function dotNotationToArray(array &$arr, $path, $val)
     {
-       $loc = &$arr;
+        $loc = &$arr;
 
-       array_shift($path);
+        array_shift($path);
 
-        foreach($path as $step)
-        {
+        foreach ($path as $step) {
             $loc = &$loc[$step];
         }
        
-       return $loc = $val;
-    }       
+        return $loc = $val;
+    }
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class FollowPointer extends Builder {
+class FollowPointer extends Builder
+{
 
 }

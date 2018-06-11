@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Load extends Builder {
+class Load extends Builder
+{
 
 }

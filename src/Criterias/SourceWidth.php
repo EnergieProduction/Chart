@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SourceWidth extends Builder {
+class SourceWidth extends Builder
+{
 
 }

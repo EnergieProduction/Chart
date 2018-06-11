@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class FindNearestPointBy extends Builder {
+class FindNearestPointBy extends Builder
+{
 
 }

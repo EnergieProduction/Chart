@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MinorTickWidth extends Builder {
+class MinorTickWidth extends Builder
+{
 
 }

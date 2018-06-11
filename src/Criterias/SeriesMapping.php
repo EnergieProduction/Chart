@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SeriesMapping extends Builder {
+class SeriesMapping extends Builder
+{
 
 }

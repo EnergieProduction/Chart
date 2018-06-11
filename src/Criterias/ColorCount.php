@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class ColorCount extends Builder {
+class ColorCount extends Builder
+{
 
 }

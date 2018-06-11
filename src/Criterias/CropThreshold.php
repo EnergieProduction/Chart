@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class CropThreshold extends Builder {
+class CropThreshold extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Offset extends Builder {
+class Offset extends Builder
+{
 
 }

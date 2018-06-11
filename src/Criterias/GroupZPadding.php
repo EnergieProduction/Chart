@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class GroupZPadding extends Builder {
+class GroupZPadding extends Builder
+{
 
 }

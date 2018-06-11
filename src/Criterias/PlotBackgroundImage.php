@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class PlotBackgroundImage extends Builder {
+class PlotBackgroundImage extends Builder
+{
 
 }

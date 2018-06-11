@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Cursor extends Builder {
+class Cursor extends Builder
+{
 
 }

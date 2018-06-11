@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class DataLabels extends Builder {
+class DataLabels extends Builder
+{
 
 }

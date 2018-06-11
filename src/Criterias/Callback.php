@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Callback extends Builder {
+class Callback extends Builder
+{
 
 }

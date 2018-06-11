@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class SymbolStrokeWidth extends Builder {
+class SymbolStrokeWidth extends Builder
+{
 
 }

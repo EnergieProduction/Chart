@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class Panning extends Builder {
+class Panning extends Builder
+{
 
 }

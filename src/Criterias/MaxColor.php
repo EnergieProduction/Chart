@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MaxColor extends Builder {
+class MaxColor extends Builder
+{
 
 }

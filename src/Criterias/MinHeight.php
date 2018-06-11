@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MinHeight extends Builder {
+class MinHeight extends Builder
+{
 
 }

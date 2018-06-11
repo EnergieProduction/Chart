@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class LegendItemClick extends Builder {
+class LegendItemClick extends Builder
+{
 
 }

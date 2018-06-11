@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class MaxZoom extends Builder {
+class MaxZoom extends Builder
+{
 
 }

@@ -2,6 +2,7 @@
 
 namespace EnergieProduction\Chart\Criterias;
 
-class XAxis extends Builder {
+class XAxis extends Builder
+{
 
 }
